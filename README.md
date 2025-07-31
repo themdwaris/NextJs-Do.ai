@@ -1,36 +1,139 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Do.ai - AI Powered Creativity Platform
 
-## Getting Started
+Do.ai is a fully responsive, modern web application that offers a suite of AI-powered tools for image generation, background/object removal, article and blog titles generation and resume analysis. Built using the latest technologies, Do.ai provides a seamless user experience with authentication, real-time feedback, and beautiful UI components.
 
-First, run the development server:
+* Generate stunning images based on prompts
+* Generate high-quality articles
+* Generate creative blog titles
+* Remove objects or background from uploaded images
+* Upload and get AI feedback on resumes
+* Like and publish creations
+* Download generated images with one click
+
+---
+
+## 🚀 Features
+
+### ✅ AI Image Generation
+
+* Generate images in various styles: Realistic, Anime, Ghibli, 3D, etc.
+* Toggle public/private creation visibility
+* One-click download functionality for generated images
+
+### ✅ AI Article Generation
+
+* Generate high-quality articles based on any topic or keyword
+* Supports token length customization
+
+### ✅ Blog Title Generator
+
+* Get creative blog title suggestions using AI from a provided topic
+
+### ✅ Resume Review
+
+* Upload a PDF resume and receive AI-generated constructive feedback
+
+### ✅ Object & Background Removal
+
+* Remove specific objects from images using AI
+* Remove background from uploaded images
+
+### ✅ Like & Publish
+
+* Like and unlike any published creation
+* Mark your own content as public for others to view
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+* Next.js (App Router)
+* React (with client/server components)
+* Tailwind CSS
+* Clerk (for authentication)
+* Axios
+* React Hot Toast (for alerts)
+
+### Backend / API
+
+* OpenAI / Gemini AI for content generation
+* Cloudinary (for image upload/transformation)
+* PDF-Parse (for reading resumes)
+* PostgreSQL (via Neon) for database
+* SQL tagged template via `@vercel/postgres`
+
+---
+
+## 📁 Folder Structure
+
+```
+app/
+├── api/
+│   ├── generate-img/
+│   ├── generate-article/
+│   ├── generate-title/
+│   ├── remove-bg/
+│   ├── remove-obj/
+│   └── resume-review/
+├── components/
+│   ├── Loader.jsx
+│   ├── Navbar.jsx
+├── assets/
+│   └── assets.js
+├── config/
+│   ├── cloudinary.js
+│   └── db.js
+├── page.jsx
+├── layout.jsx
+```
+
+---
+
+## 🧑‍💻 How to Run Locally
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/your-username/doai.git
+cd doai
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Set Up Environment Variables
+
+Create a `.env` file in the root with the following:
+
+```env
+CLERK_SECRET_KEY=your_key
+CLERK_PUBLISHABLE_KEY=your_key
+GEMINI_API_KEY=your_key
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_key
+CLOUDINARY_API_SECRET=your_secret
+DATABASE_URL=your_neon_or_postgres_url
+```
+
+### 4. Run the Dev Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📸 Screenshots
 
-## Learn More
+* Coming soon!
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Made with ❤️ by \[Mohammad Waris]
