@@ -1,4 +1,4 @@
-# Do.ai - AI Powered Creativity Platform
+# Do.ai - AI Powered SaaS Platform
 
 Do.ai is a fully responsive, modern web application that offers a suite of AI-powered tools for image generation, background/object removal, article and blog titles generation and resume analysis. Built using the latest technologies, Do.ai provides a seamless user experience with authentication, real-time feedback, and beautiful UI components.
 
