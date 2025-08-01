@@ -3,7 +3,7 @@ import Loader from "@/components/Loader";
 import { useAuth } from "@clerk/nextjs";
 import axios from "axios";
 
-import { Download, DownloadCloud, DownloadIcon, Images, Sparkles } from "lucide-react";
+import {  DownloadCloud, Images, Sparkles } from "lucide-react";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 
